@@ -12,13 +12,13 @@ public class Solution {
         String ans = "";
 
         if (n % 2 == 1) {
-          ans = "Weird";
+            ans = "Weird";
         } else if ((2 <= n) && (n <= 5)) {
-          ans = "Not Weird";
+            ans = "Not Weird";
         } else if ((6 <= n) && (n <= 20)) {
-          ans = "Weird";
+            ans = "Weird";
         } else {
-          ans = "Not Weird";
+            ans = "Not Weird";
         }
         System.out.println(ans);
     }
