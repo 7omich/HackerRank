@@ -13,9 +13,7 @@ end
 
 class Student < Person
   def initialize(first_name, last_name, id, scores)
-    @first_name = first_name
-    @last_name = last_name
-    @id = id
+    super(first_name, last_name, id)
     @scores = scores
   end
 
@@ -36,10 +34,6 @@ class Student < Person
     else
       return "T"
     end
-  end
-
-  def printPerson
-    print("Name: #{@last_name}, #{@first_name}\nID: #{@id}")
   end
 end
 
